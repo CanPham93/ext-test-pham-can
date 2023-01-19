@@ -1,0 +1,34 @@
+
+@import './fonts/fonts.scss';
+
+body {
+  margin: 0px;
+  font-family: "NotoSansJP-Regular-Alphabetic, Arial, sans-serif";
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 1;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
